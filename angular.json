@@ -22,9 +22,11 @@
           "options": {
             "outputPath": "dist/guest-book-angular",
             "index": "src/index.html",
+            "baseHref": "/guest-book-angular/",
             "main": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "src/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -33,7 +35,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/@near-wallet-selector/modal-ui-js/styles.css",
+              "./node_modules/@near-wallet-selector/account-export/styles.css"
             ],
             "scripts": []
           },
